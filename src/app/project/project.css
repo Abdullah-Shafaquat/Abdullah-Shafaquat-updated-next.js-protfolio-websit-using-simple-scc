@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.heading h1 {
+    font-size: 3em;
+    color: #005f73;
+    font-family: 'Georgia', serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.projectCard {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projectCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.projectTitle {
+    font-size: 1.7em;
+    color: #0a9396;
+    margin: 10px 0;
+}
+
+.projectImage {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #005f73;
+}
+
+.projectCard a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #005f73;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.projectCard a:hover {
+    background-color: #0a9396;
+    transform: translateY(-3px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 2.5em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+
+    .projectTitle {
+        font-size: 1.5em; 
+    }
+
+    .projectCard {
+        padding: 15px; 
+    }
+
+    .projectCard a {
+        padding: 8px 16px; 
+    }
+}

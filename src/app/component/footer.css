@@ -1,0 +1,23 @@
+footer{
+    text-align: center;
+    background-color: #2D3748;
+    color: white;
+    padding: 3%;
+  
+}
+.text1{
+    color: white;
+    font-size: 1.5em;
+}
+.text2{
+    color: #D1D5DB;
+    font-size: small;
+}
+.text3 b{
+    color: #0097b2;
+    font-size: 1.5em;
+}
+.text4{
+    color: #D1D5DB;
+    font-size: small;
+}
